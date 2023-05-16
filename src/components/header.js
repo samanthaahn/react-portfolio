@@ -3,10 +3,10 @@ import Navbar from "./navbar";
 
 function Header() {
   return (
-    <div>
+    <header className="header">
+      <div>Samantha Ahn </div>
       <Navbar />
-      <div>H</div>
-    </div>
+    </header>
   );
 }
 

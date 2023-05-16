@@ -1,8 +1,11 @@
 import React from 'react'
 
-function Project() {
+function Project({title}) {
   return (
-    <div>project</div>
+    <div>
+      <h1>HELLO</h1>
+      {title}
+    </div>
   )
 }
 
