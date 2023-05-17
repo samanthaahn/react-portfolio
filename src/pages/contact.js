@@ -1,18 +1,31 @@
-import React from 'react'
+import React from 'react';
 
 const ContactForm = () => {
-  const [formStatus, setFormStatus] = React.useState('Send')
+  const [formStatus, setFormStatus] = React.useState('Send');
+  const [errorMessage, setErrorMessage] = React.useState('');
+
   const onSubmit = (e) => {
-    e.preventDefault()
-    setFormStatus('Submitting...')
-    const { name, email, message } = e.target.elements
-    let conFom = {
+    e.preventDefault();
+    setFormStatus('Submitting...');
+
+    const { name, email, message } = e.target.elements;
+    const formData = {
       name: name.value,
       email: email.value,
       message: message.value,
+    };
+
+    if (!formData.email || !/\S+@\S+\.\S+/.test(formData.email)) {
+      setErrorMessage('Please enter a valid email address.');
+      setFormStatus('Send');
+      return;
     }
-    console.log(conFom)
-  }
+
+    setErrorMessage('');
+    console.log(formData);
+    // Perform further actions (e.g., send the form data to the server)
+  };
+
   return (
     <div className="container mt-5">
       <h2 className="mb-3">Can't wait to connect with you!</h2>
@@ -28,6 +41,9 @@ const ContactForm = () => {
             Email
           </label>
           <input className="form-control" type="email" id="email" required />
+          {errorMessage && (
+            <div className="text-danger">{errorMessage}</div>
+          )}
         </div>
         <div className="mb-3">
           <label className="form-label" htmlFor="message">
@@ -40,6 +56,7 @@ const ContactForm = () => {
         </button>
       </form>
     </div>
-  )
-}
-export default ContactForm
+  );
+};
+
+export default ContactForm;
