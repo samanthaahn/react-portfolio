@@ -1,8 +1,14 @@
 import React from 'react'
+import '../App.css'
+
 
 function Resume() {
   return (
-    <div>Resume</div>
+    <div>
+
+
+
+    </div>
   )
 }
 
