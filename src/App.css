@@ -9,3 +9,40 @@
   justify-content: space-between;
 }
 
+.aboutMeMain {
+  text-align: center;
+}
+
+.samantha {
+  margin-top: 0; /* Remove default margin from h1 */
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headshot {
+  width: 320px;
+  height: 460px;
+  margin-right: 20px; /* Adjust spacing between headshot and bio */
+}
+
+.bio {
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  /* CSS rules for screens up to 600px wide */
+}
+
+/* Styles for screens between 601px and 900px wide */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  /* CSS rules for screens between 601px and 900px wide */
+}
+
+/* Styles for screens larger than 900px */
+@media screen and (min-width: 901px) {
+  /* CSS rules for screens larger than 900px */
+}
