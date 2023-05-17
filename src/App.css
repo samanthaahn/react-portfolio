@@ -33,16 +33,100 @@
   text-align: left;
 }
 
+/* Default styles for all screen sizes */
+.aboutMeMain {
+  text-align: center;
+}
+
+.samantha {
+  margin-top: 0; /* Remove default margin from h1 */
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headshot {
+  width: 320px;
+  height: 460px;
+  margin-right: 20px; /* Adjust spacing between headshot and bio */
+}
+
+.bio {
+  text-align: left;
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.projectBox {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project h2 {
+  margin-top: 10px;
+}
+
+/* Additional styles for the project box appearance */
+.projectBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.projectBox:hover {
+  background-color: #e0e0e0;
+}
+
+/* Media queries for different screen sizes */
+
+/* Styles for screens up to 600px wide */
 @media screen and (max-width: 600px) {
-  /* CSS rules for screens up to 600px wide */
+  .headshot {
+    width: 200px;
+    height: 280px;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .headshot,
+  .bio {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 /* Styles for screens between 601px and 900px wide */
 @media screen and (min-width: 601px) and (max-width: 900px) {
-  /* CSS rules for screens between 601px and 900px wide */
+  .headshot {
+    width: 250px;
+    height: 360px;
+  }
 }
 
 /* Styles for screens larger than 900px */
 @media screen and (min-width: 901px) {
-  /* CSS rules for screens larger than 900px */
+  /* No changes needed for this screen size */
 }

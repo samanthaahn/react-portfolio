@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-function Project({title}) {
+function Project({ title }) {
   return (
-    <div>
-      
+    <div className="project">
+      <div className="projectBox">
       {title}
     </div>
-  )
+    </div>
+  );
 }
 
-export default Project
+export default Project;
