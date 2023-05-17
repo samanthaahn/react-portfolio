@@ -8,6 +8,8 @@ import Project from "./components/project";
 import AboutMe from "./pages/aboutMe";
 import Contact from "./pages/contact";
 import Resume from "./pages/resume";
+import Portfolio from "./pages/portfolio";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
@@ -18,7 +20,7 @@ function App() {
 
           <Routes>
             <Route path="/aboutme" element={<AboutMe />} />
-            <Route path="/portfolio" element={<Project />} />
+            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/resume" element={<Resume />} />
           </Routes>
