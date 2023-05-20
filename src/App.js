@@ -1,4 +1,5 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
@@ -9,7 +10,8 @@ import AboutMe from "./pages/aboutMe";
 import Contact from "./pages/contact";
 import Resume from "./pages/resume";
 import Portfolio from "./pages/portfolio";
-import "bootstrap/dist/css/bootstrap.min.css";
+
+
 
 function App() {
   return (
@@ -19,7 +21,7 @@ function App() {
         <main className="main"> 
 
           <Routes>
-            <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/" element={<AboutMe />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/resume" element={<Resume />} />

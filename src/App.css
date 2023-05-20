@@ -97,6 +97,10 @@
   background-color: #e0e0e0;
 }
 
+.images {
+  height: 200px;
+}
+
 /* Media queries for different screen sizes */
 
 /* Styles for screens up to 600px wide */
