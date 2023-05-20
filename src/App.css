@@ -1,3 +1,165 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
+
+.aboutMeMain {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+
+.samantha {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.headshot {
+  width: 320px;
+  height: 460px;
+}
+
+.bio {
+  text-align: left;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #666;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.text-danger {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.portfolio {
+  margin-top: 40px;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.github {
+  text-align: center;
+}
+
+.projectBox {
+  position: relative;
+  overflow: hidden;
+  background-color: #ce9f9f;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.projectContent {
+  padding: 20px;
+}
+
+.projectContent h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.images {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.resume {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.resumeDownload {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.resumeDownload:hover {
+  background-color: #555;
+}
+
+.resume h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.resume h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.resume ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.resume ul li {
+  margin-bottom: 5px;
+}
+
+.footerLinks {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header {
   display: flex;
   justify-content: space-between;
