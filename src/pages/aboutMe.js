@@ -9,7 +9,7 @@ function AboutMe() {
       <div className="content">
         <img
           className="headshot"
-          src={headshot} style={{ width: "320px", height: "460px" }}
+          src={PhotoMe} style={{ width: "320px", height: "460px" }}
           alt="This is a headshot of Samantha Ahn"
         />
         <div className="bio">
