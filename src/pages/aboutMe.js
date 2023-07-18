@@ -1,5 +1,5 @@
 import React from "react";
-import headshot from "../assets/images/headshot.JPG";
+import Photome from "../assets/images/Photome.png";
 import "../App.css"; 
 
 function AboutMe() {
@@ -9,7 +9,7 @@ function AboutMe() {
       <div className="content">
         <img
           className="headshot"
-          src={PhotoMe} style={{ width: "320px", height: "460px" }}
+          src={Photome} style={{ width: "320px", height: "460px" }}
           alt="This is a headshot of Samantha Ahn"
         />
         <div className="bio">
